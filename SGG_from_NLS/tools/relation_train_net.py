@@ -398,6 +398,7 @@ def main():
 
     num_gpus = int(os.environ["WORLD_SIZE"]) if "WORLD_SIZE" in os.environ else 1
 
+    ## Set your gpu's number.. 
     num_gpus = 1 ## Debugging
     args.distributed = num_gpus > 1
 
