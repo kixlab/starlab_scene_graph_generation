@@ -50,7 +50,6 @@ def compute_on_dataset(model, data_loader, device, synchronize_gather=True, time
             else:
                 # relation detection needs the targets
                 if offline_od:  # offline object detector
-                    print("offline_od ONLINE OBJECT")
                     if use_uniter:
                         output = model(images.to(device), targets, det_feats=det_feats, det_dists=det_dists, det_boxes=det_boxes, \
                                     det_tag_ids=det_tag_ids, det_norm_pos=det_norm_pos)
