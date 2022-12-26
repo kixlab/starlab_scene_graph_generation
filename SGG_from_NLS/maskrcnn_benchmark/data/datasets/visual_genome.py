@@ -541,8 +541,8 @@ def load_image_filenames(img_dir, image_file):
             fns.append(filename)
             img_info.append(img)
 
-    print("===>", len(fns), len(img_info))
-    print(img_dir, image_file)
+    # print("===>", len(fns), len(img_info))
+    # print(img_dir, image_file)
     # assert len(fns) == 108073
     # assert len(img_info) == 108073
     return fns, img_info
