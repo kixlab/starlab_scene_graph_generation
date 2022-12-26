@@ -7,6 +7,7 @@ Basic training script for PyTorch
 # NOTE: this should be the first import (no not reorder)
 import sys
 sys.path.append("/home/skchoi/SGG_from_NLS/maskrcnn_benchmark")
+sys.path.append("/hdd/skchoi/starlab_scene_graph_generation/SGG_from_NLS/maskrcnn_benchmark")
 
 from maskrcnn_benchmark.utils.env import setup_environment  # noqa F401 isort:skip
 

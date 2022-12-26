@@ -19,7 +19,7 @@ class VGDataset(torch.utils.data.Dataset):
 
     def __init__(self, split, img_dir, roidb_file, dict_file, image_file, transforms=None,
                 filter_empty_rels=True, num_im=-1, num_val_im=5000,
-                filter_duplicate_rels=True, filter_non_overlap=True, flip_aug=False, custom_eval=False, custom_path='/hdd/skchoi/SGG_from_NLS/datasets/vg/VG_10',
+                filter_duplicate_rels=True, filter_non_overlap=True, flip_aug=False, custom_eval=False, custom_path='/hdd/skchoi/starlab_scene_graph_generation/SGG_from_NLS/datasets/vg/VG_10',
                 offline_OD=False, use_uniter=False, offline_OD_type=None,
                 use_cap_trip=False, caption_label_file=None,):
         """
