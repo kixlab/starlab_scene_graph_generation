@@ -1,0 +1,50 @@
+# compilation and distribution
+__pycache__
+_ext
+*.pyc
+*.so
+maskrcnn_benchmark.egg-info/
+build/
+dist/
+
+# ipython/jupyter notebooks
+#*.ipynb
+**/.ipynb_checkpoints/
+
+# checkpoint
+checkpoint/
+checkpoints/*/
+visualization/*/
+visualization/*.npy
+visualization/*.json
+
+# dataset
+#datasets/vg/
+datasets/vg/*.h5
+datasets/vg/VG_100K
+datasets/vg/cc_detection_results_oid
+datasets/vg/COCO_detection_results_oid
+datasets/vg/VG_detection_results_oid
+*.h5
+*.pt
+*.png
+*.jpg
+*.jpeg
+glove/
+!demo/*.png
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# Pycharm editor settings
+.idea
+
+# vscode editor settings
+.vscode
+
+# MacOS
+.DS_Store
+

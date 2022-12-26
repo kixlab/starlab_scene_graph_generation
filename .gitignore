@@ -3,28 +3,30 @@ __pycache__
 _ext
 *.pyc
 *.so
-maskrcnn_benchmark.egg-info/
-build/
-dist/
+SGG_from_NLS/maskrcnn_benchmark.egg-info/
+SGG_from_NLS/build/
+SGG_from_NLS/dist/
 
 # ipython/jupyter notebooks
 #*.ipynb
 **/.ipynb_checkpoints/
 
 # checkpoint
-checkpoint/
-checkpoints/*/
-visualization/*/
-visualization/*.npy
-visualization/*.json
+SGG_from_NLS/checkpoint/
+SGG_from_NLS/checkpoints/*/
+SGG_from_NLS/visualization/*/
+SGG_from_NLS/visualization/*.npy
+SGG_from_NLS/visualization/*.json
 
 # dataset
 #datasets/vg/
-datasets/vg/*.h5
-datasets/vg/VG_100K
-datasets/vg/cc_detection_results_oid
-datasets/vg/COCO_detection_results_oid
-datasets/vg/VG_detection_results_oid_original
+SGG_from_NLS/datasets/vg/*.h5
+SGG_from_NLS/datasets/vg/VG_100K
+SGG_from_NLS/datasets/vg/cc_detection_results_oid
+SGG_from_NLS/datasets/vg/COCO_detection_results_oid
+SGG_from_NLS/datasets/vg/VG_detection_results_oid
+SGG_from_NLS/datasets/vg/VG_detection_results_oid_original
+SGG_from_NLS/preprocess/faster_rcnn_inception_resnet_v2_atrous_oid_v4_2018_12_12
 *.h5
 *.pt
 *.png
@@ -32,6 +34,7 @@ datasets/vg/VG_detection_results_oid_original
 *.jpeg
 *.npy
 *.npz
+*.zip
 glove/
 !demo/*.png
 
