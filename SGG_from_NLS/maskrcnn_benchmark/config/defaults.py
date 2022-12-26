@@ -596,7 +596,7 @@ _C.TEST.ALLOW_LOAD_FROM_CACHE = True
 
 
 _C.TEST.CUSTUM_EVAL = False
-_C.TEST.CUSTUM_PATH = '/hdd/skchoi/SGG_from_NLS/datasets/vg/VG_10'#'.'
+_C.TEST.CUSTUM_PATH = 'hdd/skchoi/starlab_scene_graph_generation/SGG_from_NLS/datasets/vg/VG_10'#'.'
 
 # ---------------------------------------------------------------------------- #
 # Misc options

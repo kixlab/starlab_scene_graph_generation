@@ -164,7 +164,7 @@ class DatasetCatalog(object):
             # args['custom_path'] = cfg.TEST.CUSTUM_PATH
 
             args['custom_eval'] = False # Delete
-            args['custom_path'] = '/hdd/skchoi/SGG_from_NLS/datasets/vg/VG_10' # Delete 
+            args['custom_path'] = 'hdd/skchoi/starlab_scene_graph_generation/SGG_from_NLSdatasets/vg/VG_10' # Delete 
 
             args['offline_OD'] = cfg.WSVL.OFFLINE_OD
             args['use_uniter'] = cfg.WSVL.USE_UNITER
