@@ -144,7 +144,7 @@ class VGDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, index):
 
-        print("Get item offline OID: ", self.offline_OD)
+        # print("Get item offline OID: ", self.offline_OD)
         if not self.offline_OD: # use online object detector 
             if self.custom_eval:
                 img = Image.open(self.custom_files[index]).convert("RGB")

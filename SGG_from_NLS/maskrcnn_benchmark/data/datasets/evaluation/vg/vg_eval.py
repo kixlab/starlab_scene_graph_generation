@@ -41,7 +41,7 @@ def do_vg_evaluation(
     multiple_preds = cfg.TEST.RELATION.MULTIPLE_PREDS
     iou_thres = cfg.TEST.RELATION.IOU_THRESHOLD
     assert mode in {'predcls', 'sgdet', 'sgcls', 'phrdet', 'preddet'}
-    print("num_rel_category:", num_rel_category)
+    print("**"*20, "\nnum_rel_category:", num_rel_category)
 
     groundtruths = []
     for image_id, prediction in enumerate(predictions):
