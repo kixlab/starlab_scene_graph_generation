@@ -402,7 +402,7 @@ def main():
     num_gpus = 1 ## Debugging
     args.distributed = num_gpus > 1
 
-    print("args.distributed: ", args.distributed, num_gpus)
+    # print("args.distributed: ", args.distributed, num_gpus)
 
     if args.distributed:
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -422,7 +422,7 @@ def main():
 
     output_dir = cfg.OUTPUT_DIR
 
-    print("Output directory: {}".format(output_dir))
+    # print("Output directory: {}".format(output_dir))
     if output_dir:
         mkdir(output_dir)
 
@@ -447,8 +447,8 @@ def main():
     model = train(cfg, args.local_rank, args.distributed, logger)
 
 
-    print("**"*20)
-    print("skip_test: {}".format(args.skip_test))
+    # print("**"*20)
+    # print("skip_test: {}".format(args.skip_test))
     if not args.skip_test:
         run_test(cfg, model, args.distributed, logger)
 
