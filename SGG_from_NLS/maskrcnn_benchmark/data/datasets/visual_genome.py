@@ -93,7 +93,7 @@ class VGDataset(torch.utils.data.Dataset):
 
                 if len(self.filenames) < 500: # during testing, save the file names in order, for visualization
                     # np.save(os.path.join("visualiazation","custom_filenames.npy"), self.filenames)
-                    np.save("/hdd/skchoi/SGG_from_NLS/visualization/custom_filenames.npy", self.filenames)
+                    np.save("/hdd/skchoi/starlab_scene_graph_generation/SGG_from_NLS/visualization/custom_filenames.npy", self.filenames)
         
         # detection results from offline detector
         self.offline_OD = offline_OD 
@@ -222,7 +222,7 @@ class VGDataset(torch.utils.data.Dataset):
                     # region box and normalized position feature
                     #### Add det_box
                     if img_id not in self.det_box:
-                        det_box = np.array(np.load('/hdd/skchoi/SGG_from_NLS/datasets/vg/VG_detection_results_oid/_box/' + img_id + '.npy', allow_pickle=True, encoding='latin1').tolist())
+                        det_box = np.array(np.load('/hdd/skchoi/starlab_scene_graph_generation/SGG_from_NLS/datasets/vg/VG_detection_results_oid/_box/' + img_id + '.npy', allow_pickle=True, encoding='latin1').tolist())
                     else:
                         det_box = self.det_box[img_id]
                     ####
