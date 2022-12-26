@@ -97,8 +97,6 @@ class VGDataset(torch.utils.data.Dataset):
         
         # detection results from offline detector
         self.offline_OD = offline_OD 
-        # self.offline_OD = False # Delete
-        print('self.offline_OD: ', self.offline_OD)
         offline_OD_type = offline_OD_type if self.offline_OD else "online"
         
         if offline_OD_type == "OID": # OID detector
